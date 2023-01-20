@@ -19,10 +19,12 @@ const WomenEthnic = [
         heading: "Kurta Sets",
         data: ["All Kurta Sets"]
     },
+    
     {
         heading: "Suits & Dress Material",
         data: ["All Suits & Dress Material","Cotton Suits","Embroidered Suits","Chanderi Suits"]
     },
+
     {
         heading: "Other Ethnic",
         data: ["Blouses","Dupattas","Lehanga","Gown","Ethnic Bottomwear"]

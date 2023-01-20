@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online Shopping Site for Fashion, Electronics, Home & More | Meeshold</title>
  
-    <link rel="icon" href="/Meeshold.jpg"/> 
+    <link rel="icon" href="/meesho cw project/Meeshold.jpg"/> 
 
     <!-- ----font---- -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,7 +26,7 @@
         }
 
         :root{
-            --hoverTextColor:#b98185;
+            --hoverTextColor:#f43397;
             --textColor: #434343;
         }
 
@@ -278,7 +278,7 @@
 
         .subMenu{
             position:absolute;
-            height: 400px;
+            /* height: 400px; */
             top: 51px;
             left: 0;
             right: 0;
@@ -298,6 +298,133 @@
         .subMenu p{
             color: var(--textColor);
         }
+
+        .submenuList{
+            display: flex;
+        }
+
+        .column{
+            margin-right: 40px;
+
+        }
+
+
+        /* -------lowest price------ */
+
+       .lowestContainer{
+        display:flex;
+        margin: 50px auto;
+        max-width: 1100px;
+        background-color: #f9f9f9;
+        /* border: 1px solid red; */
+        
+       }
+
+       .lowestPriceWhy{
+        display: flex;
+        background-color: white;
+        border-radius: 3px;
+        width: 90%;
+        margin: auto;
+        height: 50px;
+       }
+
+       .lowestLeft{
+        width: 50%;
+        padding: 25px 0 0 25px;
+        
+        
+       }
+
+       .lowestLeft > h1{
+        padding-left: 20px;
+        font-size: 40px;
+        
+       
+        color: black;
+       }
+
+       .lowestRight{
+        width: 50%;
+        /* border:1px solid black; */
+       }
+
+       .rightImage{
+        width: 100%;
+       }
+
+       .lowestIcon{
+        width: 30%;
+        /* border: 1px solid red; */
+        border-radius: 40px;
+        background-color: #f7a8ca;
+       }
+
+       .ItemLowest{
+        display: flex;
+        width: 100%;
+        padding-right: 20px;
+        align-items: center;
+        
+       }
+
+       .ItemLowest >p{
+        padding-left: 8px;
+        font-weight: bold;
+        
+       }
+
+       .downloadApp_cont{
+        
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+        height: 50px;
+        background-color: var(--hoverTextColor);
+        outline: none;
+        padding: 0 10px;
+        margin-left: 5%;
+        border-radius: 5px;
+        color:white;
+       }
+
+       #appbutton{
+        color:white;
+        padding: 0px 20px;
+       }
+
+       /* -----top---- */
+
+       .topCategoriesForm{
+        width: 1100px;
+        margin: auto;
+        
+       }
+
+       .topCategoriesHeading{
+        display: flex;
+        align-items: center;
+
+       }
+
+       .horizontaline{
+        padding: 1px;
+        background-color: var(--hoverTextColor);
+        width: 50%;
+       }
+
+       .topCategoriesHeading h1{
+        white-space: max-content;
+        width: 800px;
+       }
+
+       
+
+       
+
+       
+
+
 
        
      
@@ -321,7 +448,7 @@
 
            <!-- -----search icon------ -->
             <div class="searchIcon">
-            <img src="/585e4ae1cb11b227491c3393.png"/>
+            <img src="/meesho cw project/585e4ae1cb11b227491c3393.png"/>
             </div>
 
             <!-- -----search box------ -->
@@ -334,7 +461,7 @@
             <div class="inputClose">
 
                 <!-- -------issue--------- -->
-            <i class="fa-solid fa-xmark" id="closeSearch"></i>
+            <i class="fa-solid fa-xmark"></i>
             </div>
            
             <div class="searchRecentModal">
@@ -360,7 +487,7 @@
         <div class="headerRight">
             <div class="downloadCont">
                 <div class="mobileicon">
-                <img src="/mobile-screen-solid.svg"/>  
+                <img src="/meesho cw project/mobile-screen-solid.svg"/>  
             </div>
             <p>Download App</p>
 
@@ -383,7 +510,7 @@
         <div class="profileAndCart">
             <div class="profileContainer">
                 <div class="profileIcon">
-                <img src="/user-regular.svg"/>
+                <img src="/meesho cw project/user-regular.svg"/>
               </div>
                 <p>Profile</p>
             </div>
@@ -391,7 +518,7 @@
                
         <div class="Cartcontainer">
                 <div class="cartIcon">
-                <img src="/cart-shopping-solid.svg"/>
+                <img src="/meesho cw project/cart-shopping-solid.svg"/>
               </div>
                 <p>Cart</p>
             </div>
@@ -405,35 +532,121 @@
     <nav>
         <ul>
             <li>Women Ethnic
-                <div class="subMenu" id="womenEthnic">
+                <div class="subMenu">
+                    <div id="womenEthnic" class="submenuList">
+
+                    </div>
                     
                 </div>
             </li>
 
             <li>Women Western
-                <div class="subMenu"></div>
+                <div class="subMenu">
+                    <div id="womenWestern" class="submenuList">
+
+                    </div>
+                </div>
             </li>
 
             <li>Men
-                <div class="subMenu"></div>
+                <div class="subMenu">
+                    <div id="menWear" class="submenuList">
+                        
+                    </div>
+                </div>
             </li>
 
             <li>Home & Kitchen
-                <div class="subMenu"></div>
+                <div class="subMenu">
+                    <div id="homeAndkitchen" class="submenuList">
+                        
+                    </div>
+                </div>
             </li>
             
             <li>Electronics
-                <div class="subMenu"></div>
+                <div class="subMenu">
+                    <div id="electronics" class="submenuList">
+                        
+                    </div>
+                </div>
             </li>
             
         </ul>
     </nav>
+
+    <!-- -------starting of mid part--------- -->
+
+    <div class="lowestContainer">
+        <div class="lowestLeft">
+
+            <h1>Lowest Prices <br>Best Quality Shopping</h1>
+        
+        <div class="lowestPriceWhy">
+
+            <div class="ItemLowest"; style="border-right: 1px solid gray;">
+                <div class="lowestIcon">
+                    <img src="/meesho cw project/freeDelivery.svg"/>
+                </div>
+                <p>Free Delivvery</p>
+                </div>
+                
+                <div class="ItemLowest"; style="border-right: 1px solid gray;">
+                <div class="lowestIcon">
+                    <img src="/meesho cw project/cod.svg"/>
+                </div>
+                <p>Cash on Delivery</p>
+            </div>
+                
+                <div class="ItemLowest">
+                <div class="lowestIcon">
+                    <img src="/meesho cw project/easyReturns.svg"/>
+                </div>
+                <p>Easy Returns</p>
+            </div>
+                
+            </div>
+            
+
+            <button class="downloadApp_cont">
+                <div class="downloadAppIcon">
+                    <img src="https://images.meesho.com/images/pow/playstoreSmallIcon.webp"/>
+                </div>
+                <p id="appbutton">Download the Meeshold App</p>
+            </button>
+           
+       
+        </div>
+
+        <div class="lowestRight">
+            <div class="rightImage">
+                <img src="https://images.meesho.com/images/marketing/1631722939962.webp">
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- ------top section------ -->
+<div class="topCategoriesForm">
+    <div class="topCategoriesHeading">
+        <span class="horizontaline"></span>
+        <h1>Top Categories to choose from</h1>
+        <span class="horizontaline"></span>
+    </div>
+</div>
+
+
+
 
 
     <script src="script.js" type="module"></script>
     
 </body>
 </html>
+
+<!-- 3:12:18 -->
+
 
 
 

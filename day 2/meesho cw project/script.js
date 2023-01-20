@@ -1,8 +1,8 @@
 import electronic from "./data/electronic.js"
 import HomeandKitchen from "./data/Home&kitchen.js"
-import men from "./data/men.js"
+import mensSec from "./data/men.js"
 import WomenWestern from "./data/womenWestern.js"
-import WomenEthnic from "./data/womenWestern.js"
+import WomenEthnic from "./data/womenEthenic.js"
 
 
 
@@ -38,23 +38,38 @@ buttonEl.addEventListener("click", ()=>{
     console.log(inputSrchEl.value);
 });
 
-console.log(listRecentEl)
 
-// ----women Ethnic----
-let ethnic = document.getElementById("womenEthnic")
-function womenEth(){
+// function reusable-----
+function renderSubMenu(id,data){
+    let temp = document.getElementById(id)
 
-   return WomenEthnic.map(el =>{
+function tempfunction(){
+   return data.map(el =>{
+    let list = "";
+    list =el.data.map(element => `<p>${element}</p>`).join(" ")
+
     return `
-    <div>
-    <h4>${el.heading}</h4>
-    ${
-        el.data.forEach(element =>{
-            console.log(element)
-        })
-    }
+    <div class="column">
+        <h4>${el.heading}</h4>
+        ${list}
     </div>
     `   
-    })
+    }).join("")
 }
-ethnic.innerHTML = womenEth()
+temp.innerHTML = tempfunction()
+}
+
+// ----women Ethnic----
+renderSubMenu("womenEthnic",WomenEthnic)
+
+// ----women western----
+renderSubMenu("womenWestern",WomenWestern)
+
+// ----men----
+renderSubMenu("menWear",mensSec)
+
+// ----home and kitchen----
+renderSubMenu("homeAndkitchen",HomeandKitchen)
+
+// ----electronics----
+renderSubMenu("electronics",electronic)
