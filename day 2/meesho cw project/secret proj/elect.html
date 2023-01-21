@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="products"></div>
+    
+</body>
+
+<script>
+
+var arr = [
+
+{
+image:"https://images.meesho.com/images/products/128759975/f7umb_400.jpg",
+Name: "Attractive Irons",
+price: "295",
+},
+
+{
+image:"https://images.meesho.com/images/products/78591203/akim8_400.jpg",
+Name: "Mi Redmi Go Cases & Cov",
+price: "166",
+},
+
+{
+image:"https://images.meesho.com/images/products/72495616/cjxka_400.jpg",
+Name: "Itel A49 Back Cover",
+price: "166",
+},
+
+{
+image:"https://images.meesho.com/images/products/41585614/qbi6a_400.jpg",
+Name: "Mobile Chargers",
+price: "145",
+},
+
+{
+image:"https://images.meesho.com/images/products/145421516/almcf_400.jpg",
+Name: "Smart watch",
+price: "610",
+},
+
+{
+image:"https://images.meesho.com/images/products/144495835/lsjzn_400.jpg",
+Name: "Smart watch",
+price: "371",
+},
+
+{
+image:"https://images.meesho.com/images/products/132799137/xqhuv_400.jpg",
+Name: "Smart watch",
+price: "365",
+},
+
+{
+image:"https://images.meesho.com/images/products/223278416/ebvqh_400.jpg",
+Name: "Casual Beard oil",
+price: "107",
+},
+
+{
+image:"https://images.meesho.com/images/products/168406263/kinle_400.jpg",
+Name: "Trimmers",
+price: "397",
+},
+
+{
+image:"https://images.meesho.com/images/products/138821150/favrr_400.jpg",
+Name: "Trimmers",
+price: "776",
+},
+
+{
+image:"https://images.meesho.com/images/products/157409313/kq26a_400.jpg",
+Name: "Extension Chords",
+price: "458",
+},
+
+
+
+
+
+
+
+
+
+]
+
+
+    let maind = document.querySelector(".products");
+
+displaydata(arr)
+
+function displaydata(arr){
+
+    arr.forEach(function(ele){
+
+        let div = document.createElement("div");
+
+        let image = document.createElement("img")
+        image.setAttribute("src",ele.image );
+
+        let name = document.createElement("h2");
+        name.textContent = ele.Name;
+
+        let fab = document.createElement("h4");
+        fab.textContent = ele.Fabric;
+
+        let price = document.createElement("h4");
+        price.textContent = `₹${ele.price}`;
+
+        let country = document.createElement("h4");
+        country.textContent = ele.Country;
+
+        div.append(image,name,price);
+
+        maind.append(div)
+
+        console.log(ele)
+
+
+    })
+
+}
+</script>
+</html>

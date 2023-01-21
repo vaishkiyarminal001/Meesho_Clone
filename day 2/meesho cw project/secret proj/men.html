@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="products"></div>
+    
+</body>
+
+<script>
+
+var arr = [
+
+{
+image:"https://images.meesho.com/images/products/45988736/ghpet_400.jpg",
+Name: "Trendy Designer Men Tshirts",
+Fabric : "Cotton",
+price: "729",
+Country : "India"
+},
+
+{
+image:"https://images.meesho.com/images/products/163811080/mpe2w_400.jpg",
+Name: "Stylish Fashionable Men",
+Fabric : "Cotton",
+price: "250",
+Country : "India"
+},
+
+{
+image:"https://images.meesho.com/images/products/43917155/fyom4_400.jpg",
+Name: "Trendy Ravishing Men",
+Fabric : "Cotton",
+price: "433",
+Country : "India"
+},
+
+{
+image:"https://images.meesho.com/images/products/46544357/lstjr_400.jpg",
+Name: "Urbane Modern Men Shirts",
+Fabric : "Cotton",
+price: "564",
+Country : "India"
+},
+
+{
+image:"https://images.meesho.com/images/products/88185716/w8oa7_400.jpg",
+Name: "Trendy Designer Men Tshirts",
+Fabric : "Cotton",
+price: "306",
+Country : "India"
+},
+
+{
+image:"https://images.meesho.com/images/products/121332960/z5bgh_400.jpg",
+Name: "Styles Unique Men Socks",
+Fabric : "Cotton",
+price: "122",
+Country : "India"
+},
+
+{
+image:"https://images.meesho.com/images/products/153689410/7arti_400.jpg",
+Name: "Men Full face White helmet",
+Fabric : "Cotton",
+price: "984",
+Country : "India"
+},
+
+{
+image:"https://images.meesho.com/images/products/36208128/nxbfv_400.jpg",
+Name: "Fabulous Men Gloves",
+Fabric : "Cotton",
+price: "178",
+Country : "India"
+},
+
+{
+image:"https://images.meesho.com/images/products/76066837/telzs_400.jpg",
+Name: "Versatile Men Caps",
+Fabric : "Cotton",
+price: "229",
+Country : "India"
+},
+
+{
+image:"https://images.meesho.com/images/products/81655323/rzbwb_400.jpg",
+Name: "Relaxed Fabulous Men Cas",
+Fabric : "Cotton",
+price: "406",
+Country : "India"
+},
+
+{
+image:"https://images.meesho.com/images/products/163267286/jsga3_400.jpg",
+Name: "Ethnic Men Kurtas",
+Fabric : "Velvet",
+price: "838",
+Country : "India"
+},
+
+{
+image:"https://images.meesho.com/images/products/154236824/yap6d_400.jpg",
+Name: "Urbane Men Kurta Sets",
+Fabric : "Cotton",
+price: "777",
+Country : "India"
+},
+
+{
+image:"https://images.meesho.com/images/products/12424118/63655_400.jpg",
+Name: "Fancy Men Vest",
+Fabric : "Cotton",
+price: "462",
+Country : "India"
+},
+
+{
+image:"https://images.meesho.com/images/products/35222082/qvawp_400.jpg",
+Name: "Casual Men Vest",
+Fabric : "Cotton",
+price: "194",
+Country : "India"
+},
+
+{
+image:"https://images.meesho.com/images/products/133853951/qory9_400.jpg",
+Name: "Standard Men Vest",
+Fabric : "Cotton",
+price: "432",
+Country : "India"
+},
+
+{
+image:"https://images.meesho.com/images/products/128849729/cyrmz_400.jpg",
+Name: "Stylish Glamarous Men",
+Fabric : "Cotton",
+price: "375",
+Country : "India"
+},
+
+{
+image:"https://images.meesho.com/images/products/153776422/chh1v_400.jpg",
+Name: "Elegant Latest Men Trousers",
+Fabric : "Cotton",
+price: "319",
+Country : "India"
+},
+
+{
+image:"https://images.meesho.com/images/products/27560207/gnj7b_400.jpg",
+Name: "Casual Glamarous Men Trousers",
+Fabric : "Cotton",
+price: "713",
+Country : "India"
+},
+
+{
+image:"https://images.meesho.com/images/products/160136040/eaxo3_400.jpg",
+Name: "Elegant Unique Men Trous",
+Fabric : "Cotton",
+price: "731",
+Country : "India"
+},
+
+
+
+
+
+]
+
+
+    let maind = document.querySelector(".products");
+
+displaydata(arr)
+
+function displaydata(arr){
+
+    arr.forEach(function(ele){
+
+        let div = document.createElement("div");
+
+        let image = document.createElement("img")
+        image.setAttribute("src",ele.image );
+
+        let name = document.createElement("h2");
+        name.textContent = ele.Name;
+
+        let fab = document.createElement("h4");
+        fab.textContent = ele.Fabric;
+
+        let price = document.createElement("h4");
+        price.textContent = `₹${ele.price}`;
+
+        let country = document.createElement("h4");
+        country.textContent = ele.Country;
+
+        div.append(image,name,fab,price,country);
+
+        maind.append(div)
+
+        console.log(ele)
+
+
+    })
+
+}
+</script>
+</html>
