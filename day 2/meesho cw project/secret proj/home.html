@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home & Kitchen</title>
+    <style>
+
+        :root{
+            --hoverTextColor:#f43397;
+            --textColor: #434343;
+        }
+        .products{
+            display: grid;
+            /* border: 1px solid red; */
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+
+        }
+
+        .products > div{
+            /* border: 1px solid red; */
+            width: 80%;
+            margin: auto;
+            height: auto;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+        }
+
+        .products > div > img{
+            width: 100%;
+            height: auto;
+            align-items: center;
+           
+        }
+
+        .products >div > h4,
+        .products >div > h2{
+            text-align: center;
+            color: var(--hoverTextColor);
+            cursor: pointer;
+        }
+
+        .products >div > h2{
+            color: var(--textColor);
+        }
+
+        .products >div > button{
+        display: block;
+         margin: auto;
+         background-color: var(--hoverTextColor);
+         color: white;
+         padding: 5px;
+         border: none;
+         border-radius: 3px;
+
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="products"></div>
+    
+</body>
+
+<script>
+
+var arr = [
+
+{
+image:"https://images.meesho.com/images/products/24639995/08ec2_400.jpg",
+Name: "home dacor",
+price: "277",
+Country : "India"
+},
+
+{
+image:"https://images.meesho.com/images/products/144305706/rzlc0_400.jpg",
+Name: "Designer Jars & Containers",
+price: "169",
+},
+
+{
+image:"https://images.meesho.com/images/products/22981840/2aa91_400.jpg",
+Name: "Classy Unisex Decor",
+price: "443",
+},
+
+{
+image:"https://images.meesho.com/images/products/26223926/0875f_400.jpg",
+Name: "home lights",
+price: "376",
+},
+
+{
+image:"https://images.meesho.com/images/products/35450824/abbai_400.jpg",
+Name: "Home Decor",
+price: "400",
+},
+
+{
+image:"https://images.meesho.com/images/products/29329816/a5f39_400.jpg",
+Name: "Designer decor",
+price: "884",
+},
+
+{
+image:"https://images.meesho.com/images/products/22275758/88b89_400.jpg",
+Name: "Decor mats",
+price: "997",
+},
+
+{
+image:"https://images.meesho.com/images/products/80245628/9ldvu_400.jpg",
+Name: "Amazing Jars & Containers",
+price: "1610",
+},
+
+{
+image:"https://images.meesho.com/images/products/124149177/z4tac_400.jpg",
+Name: "Graceful Water Bottles",
+price: "325",
+},
+
+{
+image:"https://images.meesho.com/images/products/164567556/suqrg_400.jpg",
+Name: "Everyday Spice Racks",
+price: "335",
+},
+
+{
+image:"https://images.meesho.com/images/products/3860872/1_400.jpg",
+Name: "Elite Jars & Containers",
+price: "117",
+},
+
+{
+image:"https://images.meesho.com/images/products/73152876/pdgch_400.jpg",
+Name: "Designer Decorative Sticker",
+price: "208",
+},
+
+{
+image:"https://images.meesho.com/images/products/10058151/e958e_400.jpg",
+Name: "Wonderful Wall Clocks",
+price: "293",
+},
+
+{
+image:"https://images.meesho.com/images/products/9988363/09ff7_400.jpg",
+Name: "Essential Wall Clocks",
+price: "266",
+},
+
+{
+image:"https://images.meesho.com/images/products/170595579/popsx_400.jpg",
+Name: "Wall Clocks",
+price: "263",
+},
+
+{
+image:"https://images.meesho.com/images/products/8882170/b1357_400.jpg",
+Name: "Colorful Wall Clocks",
+price: "313",
+},
+
+]
+
+
+    let maind = document.querySelector(".products");
+
+displaydata(arr)
+
+function displaydata(arr){
+
+    arr.forEach(function(ele){
+
+        let div = document.createElement("div");
+
+        let image = document.createElement("img")
+        image.setAttribute("src",ele.image );
+
+        let name = document.createElement("h2");
+        name.textContent = ele.Name;
+
+        let fab = document.createElement("h4");
+        fab.textContent = ele.Fabric;
+
+        let price = document.createElement("h4");
+        price.textContent = `₹${ele.price}`;
+
+        let country = document.createElement("h4");
+        country.textContent = ele.Country;
+
+        let btn = document.createElement("button");
+        btn.textContent = "Buy"
+
+        div.append(image,name,price, btn);
+
+        maind.append(div)
+
+        console.log(ele)
+
+
+    })
+
+}
+</script>
+</html>

@@ -209,7 +209,8 @@
 
         .profileAndCart:hover,
         .profileAndCart:focus{
-            color:var(--textColor)
+            color:var(--textColor);
+            
         }
         .profileIcon,
         .cartIcon{
@@ -219,6 +220,7 @@
         .profileAndCart p{
             margin: 0;
             padding: 0;
+            
 
         }
 
@@ -229,6 +231,7 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
+            
         }
 
         .becomeSeller{
@@ -450,7 +453,15 @@
 
        .topCargoreisImage img{
         max-width:300px;
-       }  
+       } 
+       
+       #profile,
+       #cart{
+        color: var(--textColor);
+        cursor: pointer;
+        text-decoration:none;
+        /* border: 1px solid red; */
+       }
     
 
     </style>
@@ -491,15 +502,15 @@
             <div class="searchRecentModal">
                 <h3>Popular Searches</h3>
 
-                <button>saree</button>
-                <button>shoes</button>
-                <button>kurti</button>
-                <button>tshirt</button>
-                <button>formal</button>
-                <button>jeans</button>
-                <button>tops</button>
-                <button>winter wear</button>
-                <button>jacket</button>
+                <a href="prod.html"><button>saree</button></a>
+                <a href="men.html"></a> <button>shoes</button></a>
+                <a href="prod.html"><button>kurti</button></a>
+                <a href="men.html"><button>tshirt</button></a>
+                <a href="men.html"><button>formal</button></a>
+               <a href="men.html"><button>jeans</button></a>
+              <a href="west.html"><button>tops</button></a>
+              <a href="west.html"><button>winter wear</button></a>
+              <a href="west.html"><button>jacket</button></a>
             </div>
 
             </div>
@@ -536,7 +547,7 @@
                 <div class="profileIcon">
                     <i class="fa-regular fa-user"></i>
               </div>
-                <p>Profile</p>
+              <a href="profile.html"><p id="profile">Profile</p></a>
             </div>
 
                
@@ -544,7 +555,7 @@
                 <div class="cartIcon">
                 <i class="fa-solid fa-cart-shopping"></i>
               </div>
-                <p>Cart</p>
+                <a href="cart.html"><p id="cart">Cart</p></a>
             </div>
 
             </div>
@@ -696,11 +707,11 @@
     </div>
         <div class="topCargoreisImage">
 
-            <img src="https://images.meesho.com/images/marketing/1649760442043.webp">
+           <a href="prod.html"><img src="https://images.meesho.com/images/marketing/1649760442043.webp"></a>
 
-            <img src="https://images.meesho.com/images/marketing/1649760423313.webp">
+             <a href="men.html"><img src="https://images.meesho.com/images/marketing/1649760423313.webp"></a>
 
-            <img src="https://images.meesho.com/images/marketing/1649759799809.webp">
+           <a href="west.html"><img src="https://images.meesho.com/images/marketing/1649759799809.webp"></a>
 
         </div>
     </div>
