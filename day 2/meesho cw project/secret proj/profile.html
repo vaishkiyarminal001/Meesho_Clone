@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile</title>
+
+    <link rel="index.html" href="index.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+
+<!-- icon -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<style>
+
+  *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    }
+
+    .container{
+        height:100vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        column-gap: 30px;
+        
+    }
+
+    .form{
+        max-width: 430px;
+        width: 100%;
+        padding: 30px;
+        border-radius: 6px;
+        background-color: #f43397;
+        
+
+    }
+
+    header{
+        font-size: 28px;
+        font-weight: 600;
+        color: #232836;
+        text-align: center;
+        color: white
+
+    }
+
+    form{ 
+        margin-top: 30px;
+        
+    }
+
+    form .field{
+      height: 50px;
+      width: 100%;
+      margin-top: 20px;
+      
+
+    }
+
+    .field input,
+    .field button{
+        height: 100%;
+        width: 100%;
+        border: none;
+        font-size: 16px;
+        font-weight: 400;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+
+    .field input{
+        padding: 0 15px;
+        border: 1px solid #cacaca;
+    }
+
+    .form-link{
+       text-align: center; 
+       margin-top: 10px;
+    }
+
+    .form-link span,
+    .form-link a{
+       font-size: 14px;
+       font-weight: 400; 
+
+    }
+
+    .form a:hover{
+        text-decoration: underline;
+
+    }
+
+</style>
+
+
+</head>
+<body>
+    
+
+    <section class="container forms">
+        <div class="form login">
+            <div class="form-content">
+                <header>Login</header>
+
+                <form action="#">
+                    <div class="field input-field">
+                        <input type="email" placeholder="Email" class="input">
+                    </div>
+
+                    <div class="field input-field">
+                        <input type="password" placeholder="Password" class="password">
+                        <i class="fa-regular fa-eye-slash"></i>
+                    </div>
+
+                    <div class="form-link">
+                        <a href="#" class="forget-pass">Forget Password</a>
+                    </div>
+
+                    <div class="field button-field">
+                        <button>Login</button>
+                    </div>
+
+                    <div class="form-link">
+                        <span>Alreday have an account? <a href="#" class="link signup-link">SignUp</a></span>
+                    </div>
+
+
+                </form>
+            </div>
+        </div>
+
+
+
+        <div class="form login">
+            <div class="form-content">
+                <header>Sign Up</header>
+
+                <form action="#">
+                    <div class="field input-field">
+                        <input type="email" placeholder="Email" class="input">
+                    </div>
+
+                    <div class="field input-field">
+                        <input type="password" placeholder="Password" class="password">
+                        <i class="fa-regular fa-eye-slash"></i>
+                    </div>
+
+                    <div class="form-link">
+                        <a href="#" class="forget-pass">Forget Password</a>
+                    </div>
+
+                    <div class="field button-field">
+                        <button>Sign Up</button>
+                    </div>
+
+                    <div class="form-link">
+                        <span>Alreday have an account? <a href="#" class="link login-link">Login</a></span>
+                    </div>
+
+
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

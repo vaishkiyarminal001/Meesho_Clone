@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
 </head>
 <body>
 
@@ -83,13 +83,6 @@ price: "458",
 },
 
 
-
-
-
-
-
-
-
 ]
 
 
@@ -109,16 +102,10 @@ function displaydata(arr){
         let name = document.createElement("h2");
         name.textContent = ele.Name;
 
-        let fab = document.createElement("h4");
-        fab.textContent = ele.Fabric;
-
         let price = document.createElement("h4");
         price.textContent = `₹${ele.price}`;
 
-        let country = document.createElement("h4");
-        country.textContent = ele.Country;
 
-        div.append(image,name,price);
 
         maind.append(div)
 
