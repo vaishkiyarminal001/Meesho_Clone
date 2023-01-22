@@ -1,3 +1,4 @@
+
 // -----search part-----
 
 let inputSrchEl = document.querySelector(".inputSrch");
@@ -30,14 +31,6 @@ buttonEl.addEventListener("click", ()=>{
     console.log(inputSrchEl.value);
 });
 
-let profile = document.getElementById("profile")
-let cart = document.getElementById("cart")
-
-let form = document.querySelector(".forms")
-  pwShowhide = document.querySelectorAll(".forms")
-  pwShowhide = document.querySelectorAll(".link");
-
-  console.log(forms, pwShowhide, links)
 
 
 
