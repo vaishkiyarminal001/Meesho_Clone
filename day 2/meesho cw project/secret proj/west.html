@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Western Wear</title>
+
+    <style>
+
+        :root{
+            --hoverTextColor:#f43397;
+            --textColor: #434343;
+        }
+        .products{
+            display: grid;
+            /* border: 1px solid red; */
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+
+        }
+
+        .products > div{
+            /* border: 1px solid red; */
+            width: 80%;
+            margin: auto;
+            height: auto;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+        }
+
+        .products > div > img{
+            width: 100%;
+            height: auto;
+            align-items: center;
+           
+        }
+
+        .products >div > h4,
+        .products >div > h2{
+            text-align: center;
+            color: var(--hoverTextColor);
+            cursor: pointer;
+        }
+
+        .products >div > h2{
+            color: var(--textColor);
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="products"></div>
+    
+</body>
+
+<script>
+
+var arr = [
+
+{
+image:"https://images.meesho.com/images/products/168600453/hx3hl_400.jpg",
+Name: "Trendy Retro Women Tops",
+Fabric : "Cotton",
+price: "287",
+Country : "India"
+},
+
+{
+image:"https://images.meesho.com/images/products/170210010/cidun_400.jpg",
+Name: "Trendy Feminine Women",
+Fabric : "Cotton",
+price: "260",
+Country : "India"
+},
+
+{
+image:"https://images.meesho.com/images/products/143922036/3wnde_400.jpg",
+Name: "Trendy Fabulous Women Tops",
+Fabric : "Cotton",
+price: "245",
+Country : "India"
+},
+
+{
+image:"https://images.meesho.com/images/products/124038595/4rkx4_400.jpg",
+Name: "Trendy Modern Women Tops",
+Fabric : "Cotton",
+price: "280",
+Country : "India"
+},
+
+{
+image:"https://images.meesho.com/images/products/145173849/hwayw_400.jpg",
+Name: "Trendy Fashionable Women Tops",
+Fabric : "Cotton",
+price: "194",
+Country : "India"
+},
+
+{
+image:"https://images.meesho.com/images/products/137054404/wj1sw_400.jpg",
+Name: "Classic Fashionable women",
+Fabric : "Cotton",
+price: "306",
+Country : "India"
+},
+
+{
+image:"https://images.meesho.com/images/products/137641650/qviyf_400.jpg",
+Name: "Trendy Partywear Women Tops",
+Fabric : "Cotton",
+price: "286",
+Country : "India"
+},
+
+{
+image:"https://images.meesho.com/images/products/175250749/dydbx_400.jpg",
+Name: "Classic Latest women",
+Fabric : "Cotton",
+price: "225",
+Country : "India"
+},
+
+{
+image:"https://images.meesho.com/images/products/65789575/qwxwt_400.jpg",
+Name: "Stylish Partywear Women Top",
+Fabric : "Cotton",
+price: "384",
+Country : "India"
+},
+
+{
+image:"https://images.meesho.com/images/products/147298906/h5xzx_400.jpg",
+Name: "Comfy Graceful Women Tops & ",
+Fabric : "Cotton",
+price: "243",
+Country : "India"
+},
+
+{
+image:"https://images.meesho.com/images/products/123850475/5psk3_400.jpg",
+Name: "Urbane Retro Women Tops ",
+Fabric : "Velvet",
+price: "240",
+Country : "India"
+},
+
+{
+image:"https://images.meesho.com/images/products/153110090/3ydod_400.jpg",
+Name: "Fancy Glamorous Women",
+Fabric : "Cotton",
+price: "294",
+Country : "India"
+},
+
+{
+image:"https://images.meesho.com/images/products/164820075/9ekaw_400.jpg",
+Name: "Tops & Tunics",
+Fabric : "Cotton",
+price: "258",
+Country : "India"
+},
+
+{
+image:"https://images.meesho.com/images/products/161290290/svbop_400.jpgg",
+Name: "Pretty Latest Women Tops",
+Fabric : "Cotton",
+price: "194",
+Country : "India"
+},
+
+{
+image:"https://images.meesho.com/images/products/78375538/vpt62_400.jpg",
+Name: "Fancy Elegant Women Jeans",
+Fabric : "Cotton",
+price: "432",
+Country : "India"
+},
+
+{
+image:"https://www.meesho.com/comfy-fabulous-women-jeans/p/17z3ee",
+Name: "Comfy Fabulous Women Jeans",
+Fabric : "Cotton",
+price: "256",
+Country : "India"
+},
+
+{
+image:"https://images.meesho.com/images/products/102592540/qy2uw_400.jpg",
+Name: "Trendy Retro Women Jeans",
+Fabric : "Cotton",
+price: "512",
+Country : "India"
+},
+
+{
+image:"https://images.meesho.com/images/products/78375538/vpt62_400.jpg",
+Name: "Fancy Elegant Women Jeans",
+Fabric : "Cotton",
+price: "432",
+Country : "India"
+},
+
+{
+image:"https://images.meesho.com/images/products/135490923/yc8it_400.jpg",
+Name: "Fancy Elegant Women Jeans",
+Fabric : "Cotton",
+price: "432",
+Country : "India"
+},
+
+{
+image:"https://images.meesho.com/images/products/78375538/vpt62_400.jpg",
+Name: "Trendy Alluring Women Ni",
+Fabric : "Cotton",
+price: "277",
+Country : "India"
+},
+
+{
+image:"https://images.meesho.com/images/products/158279767/vwzs3_400.jpg",
+Name: "Divine Fashionable Women Ni",
+Fabric : "Cotton",
+price: "284",
+Country : "India"
+},
+
+{
+image:"https://images.meesho.com/images/products/1193361/1_400.jpg",
+Name: "Myhra Alluring Knit Wome",
+Fabric : "Cotton",
+price: "463",
+Country : "India"
+},
+
+]
+
+
+    let maind = document.querySelector(".products");
+
+displaydata(arr)
+
+function displaydata(arr){
+
+    arr.forEach(function(ele){
+
+        let div = document.createElement("div");
+
+        let image = document.createElement("img")
+        image.setAttribute("src",ele.image );
+
+        let name = document.createElement("h2");
+        name.textContent = ele.Name;
+
+        let fab = document.createElement("h4");
+        fab.textContent = ele.Fabric;
+
+        let price = document.createElement("h4");
+        price.textContent = `₹${ele.price}`;
+
+        let country = document.createElement("h4");
+        country.textContent = ele.Country;
+
+        div.append(image,name,fab,price,country);
+
+        maind.append(div)
+
+        console.log(ele)
+
+
+    })
+
+}
+</script>
+</html>
